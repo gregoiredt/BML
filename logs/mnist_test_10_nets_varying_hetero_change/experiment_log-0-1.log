@@ -1,0 +1,967 @@
+03-21 19:45 DEBUG    Experiment arguments: Namespace(alpha=[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.1], communication_rounds=5, datadir='data/mnist/', dataset='mnist', dropout_p=0.0, epochs=10, experiment=['u-ensemble', 'pdm', 'pdm_iterative'], init_seed=0, iter_epochs=5, logdir='logs/mnist_test_10_nets_varying_hetero_change', lr=0.01, lr_decay=0.99, n_nets=10, net_config=[[784, 10, 10], [784, 10, 10], [784, 10, 10], [784, 10, 10], [784, 10, 10], [784, 10, 10], [784, 10, 10], [784, 10, 10], [784, 10, 10], [784, 100, 10]], net_type='fc', partition='hetero-dir', pdm_gamma=1.0, pdm_sig=1.0, pdm_sig0=1.0, reg=1e-06, reg_fac=0.0, trials=1)
+03-21 19:45 DEBUG    ####################################################################################################
+03-21 19:45 DEBUG    Executing Trial 0 with seed 0
+03-21 19:45 DEBUG    Data statistics: {0: {0: 51, 1: 89, 2: 101, 3: 52, 4: 13, 5: 83, 6: 201, 7: 98, 8: 121, 9: 17}, 1: {0: 153, 1: 121, 2: 44, 3: 1, 4: 100, 5: 23, 6: 29, 7: 94, 8: 77, 9: 154}, 2: {0: 63, 1: 210, 2: 17, 3: 51, 4: 77, 5: 111, 6: 4, 7: 23, 8: 147, 9: 25}, 3: {0: 43, 1: 166, 2: 45, 3: 33, 4: 30, 5: 51, 6: 37, 7: 40, 8: 20, 9: 28}, 4: {0: 60, 1: 171, 2: 131, 3: 1, 4: 128, 5: 64, 6: 11, 7: 5, 8: 17}, 5: {0: 69, 1: 42, 2: 22, 3: 68, 4: 30, 5: 5, 6: 57, 7: 23, 8: 16, 9: 22}, 6: {0: 27, 1: 118, 2: 16, 3: 36, 4: 123, 5: 44, 6: 15, 7: 155, 8: 69, 9: 170}, 7: {0: 67, 1: 263, 2: 41, 3: 62, 4: 33, 5: 77, 6: 84, 7: 17, 8: 47, 9: 59}, 8: {0: 28, 1: 24, 2: 22, 3: 37, 4: 9, 5: 122, 6: 33, 7: 138, 8: 64, 9: 19}, 9: {0: 5362, 1: 5538, 2: 5519, 3: 5790, 4: 5299, 5: 4841, 6: 5447, 7: 5672, 8: 5273, 9: 5455}}
+03-21 19:45 DEBUG    Training network 0
+03-21 19:45 DEBUG    n_training: 26
+03-21 19:45 DEBUG    n_test: 313
+03-21 19:45 DEBUG    >> Pre-Training Training accuracy: 0.069007
+03-21 19:45 DEBUG    >> Pre-Training Test accuracy: 0.069500
+03-21 19:46 DEBUG    Epoch: 0 Loss: 0.774090 L2 loss: 0.000049
+03-21 19:46 DEBUG    Epoch: 1 Loss: 0.488928 L2 loss: 0.000073
+03-21 19:46 DEBUG    Epoch: 2 Loss: 0.447126 L2 loss: 0.000090
+03-21 19:46 DEBUG    Epoch: 3 Loss: 0.161069 L2 loss: 0.000107
+03-21 19:46 DEBUG    Epoch: 4 Loss: 0.139979 L2 loss: 0.000122
+03-21 19:46 DEBUG    Epoch: 5 Loss: 0.035758 L2 loss: 0.000137
+03-21 19:46 DEBUG    Epoch: 6 Loss: 0.062069 L2 loss: 0.000151
+03-21 19:46 DEBUG    Epoch: 7 Loss: 0.208881 L2 loss: 0.000164
+03-21 19:46 DEBUG    Epoch: 8 Loss: 0.036782 L2 loss: 0.000179
+03-21 19:46 DEBUG    Epoch: 9 Loss: 0.061995 L2 loss: 0.000190
+03-21 19:46 DEBUG    >> Training accuracy: 0.995157
+03-21 19:46 DEBUG    >> Test accuracy: 0.804900
+03-21 19:46 DEBUG     ** Training complete **
+03-21 19:46 DEBUG    Training network 1
+03-21 19:46 DEBUG    n_training: 25
+03-21 19:46 DEBUG    n_test: 313
+03-21 19:46 DEBUG    >> Pre-Training Training accuracy: 0.187186
+03-21 19:46 DEBUG    >> Pre-Training Test accuracy: 0.153300
+03-21 19:46 DEBUG    Epoch: 0 Loss: 0.672059 L2 loss: 0.000043
+03-21 19:46 DEBUG    Epoch: 1 Loss: 0.444473 L2 loss: 0.000066
+03-21 19:46 DEBUG    Epoch: 2 Loss: 0.684786 L2 loss: 0.000083
+03-21 19:46 DEBUG    Epoch: 3 Loss: 0.215173 L2 loss: 0.000099
+03-21 19:46 DEBUG    Epoch: 4 Loss: 0.142182 L2 loss: 0.000115
+03-21 19:46 DEBUG    Epoch: 5 Loss: 0.044143 L2 loss: 0.000130
+03-21 19:46 DEBUG    Epoch: 6 Loss: 0.123117 L2 loss: 0.000144
+03-21 19:46 DEBUG    Epoch: 7 Loss: 0.029864 L2 loss: 0.000157
+03-21 19:46 DEBUG    Epoch: 8 Loss: 0.023287 L2 loss: 0.000168
+03-21 19:46 DEBUG    Epoch: 9 Loss: 0.029884 L2 loss: 0.000178
+03-21 19:46 DEBUG    >> Training accuracy: 0.997487
+03-21 19:46 DEBUG    >> Test accuracy: 0.749000
+03-21 19:46 DEBUG     ** Training complete **
+03-21 19:46 DEBUG    Training network 2
+03-21 19:46 DEBUG    n_training: 23
+03-21 19:46 DEBUG    n_test: 313
+03-21 19:46 DEBUG    >> Pre-Training Training accuracy: 0.109890
+03-21 19:46 DEBUG    >> Pre-Training Test accuracy: 0.080800
+03-21 19:46 DEBUG    Epoch: 0 Loss: 0.917011 L2 loss: 0.000036
+03-21 19:46 DEBUG    Epoch: 1 Loss: 0.658869 L2 loss: 0.000050
+03-21 19:46 DEBUG    Epoch: 2 Loss: 0.555012 L2 loss: 0.000063
+03-21 19:46 DEBUG    Epoch: 3 Loss: 0.426289 L2 loss: 0.000076
+03-21 19:46 DEBUG    Epoch: 4 Loss: 0.540176 L2 loss: 0.000089
+03-21 19:46 DEBUG    Epoch: 5 Loss: 0.122583 L2 loss: 0.000101
+03-21 19:46 DEBUG    Epoch: 6 Loss: 0.087565 L2 loss: 0.000116
+03-21 19:46 DEBUG    Epoch: 7 Loss: 0.069596 L2 loss: 0.000130
+03-21 19:46 DEBUG    Epoch: 8 Loss: 0.092495 L2 loss: 0.000142
+03-21 19:46 DEBUG    Epoch: 9 Loss: 0.103331 L2 loss: 0.000154
+03-21 19:46 DEBUG    >> Training accuracy: 0.984890
+03-21 19:46 DEBUG    >> Test accuracy: 0.737600
+03-21 19:46 DEBUG     ** Training complete **
+03-21 19:46 DEBUG    Training network 3
+03-21 19:46 DEBUG    n_training: 16
+03-21 19:46 DEBUG    n_test: 313
+03-21 19:46 DEBUG    >> Pre-Training Training accuracy: 0.044625
+03-21 19:46 DEBUG    >> Pre-Training Test accuracy: 0.065200
+03-21 19:46 DEBUG    Epoch: 0 Loss: 2.049676 L2 loss: 0.000032
+03-21 19:46 DEBUG    Epoch: 1 Loss: 1.407318 L2 loss: 0.000043
+03-21 19:46 DEBUG    Epoch: 2 Loss: 0.803878 L2 loss: 0.000057
+03-21 19:46 DEBUG    Epoch: 3 Loss: 0.574684 L2 loss: 0.000070
+03-21 19:46 DEBUG    Epoch: 4 Loss: 0.542464 L2 loss: 0.000081
+03-21 19:46 DEBUG    Epoch: 5 Loss: 0.448034 L2 loss: 0.000091
+03-21 19:46 DEBUG    Epoch: 6 Loss: 0.078293 L2 loss: 0.000102
+03-21 19:46 DEBUG    Epoch: 7 Loss: 0.156037 L2 loss: 0.000113
+03-21 19:46 DEBUG    Epoch: 8 Loss: 0.050038 L2 loss: 0.000121
+03-21 19:46 DEBUG    Epoch: 9 Loss: 0.072080 L2 loss: 0.000130
+03-21 19:46 DEBUG    >> Training accuracy: 0.977688
+03-21 19:46 DEBUG    >> Test accuracy: 0.799000
+03-21 19:46 DEBUG     ** Training complete **
+03-21 19:46 DEBUG    Training network 4
+03-21 19:46 DEBUG    n_training: 19
+03-21 19:46 DEBUG    n_test: 313
+03-21 19:46 DEBUG    >> Pre-Training Training accuracy: 0.090136
+03-21 19:46 DEBUG    >> Pre-Training Test accuracy: 0.090900
+03-21 19:46 DEBUG    Epoch: 0 Loss: 1.005051 L2 loss: 0.000035
+03-21 19:46 DEBUG    Epoch: 1 Loss: 0.674929 L2 loss: 0.000049
+03-21 19:46 DEBUG    Epoch: 2 Loss: 0.372832 L2 loss: 0.000060
+03-21 19:46 DEBUG    Epoch: 3 Loss: 0.154516 L2 loss: 0.000069
+03-21 19:46 DEBUG    Epoch: 4 Loss: 0.089129 L2 loss: 0.000077
+03-21 19:46 DEBUG    Epoch: 5 Loss: 0.020649 L2 loss: 0.000086
+03-21 19:46 DEBUG    Epoch: 6 Loss: 0.023032 L2 loss: 0.000093
+03-21 19:46 DEBUG    Epoch: 7 Loss: 0.061359 L2 loss: 0.000100
+03-21 19:46 DEBUG    Epoch: 8 Loss: 0.041006 L2 loss: 0.000107
+03-21 19:46 DEBUG    Epoch: 9 Loss: 0.016032 L2 loss: 0.000112
+03-21 19:46 DEBUG    >> Training accuracy: 0.994898
+03-21 19:46 DEBUG    >> Test accuracy: 0.606200
+03-21 19:46 DEBUG     ** Training complete **
+03-21 19:46 DEBUG    Training network 5
+03-21 19:46 DEBUG    n_training: 12
+03-21 19:46 DEBUG    n_test: 313
+03-21 19:46 DEBUG    >> Pre-Training Training accuracy: 0.163842
+03-21 19:46 DEBUG    >> Pre-Training Test accuracy: 0.108500
+03-21 19:46 DEBUG    Epoch: 0 Loss: 2.787917 L2 loss: 0.000033
+03-21 19:46 DEBUG    Epoch: 1 Loss: 0.252052 L2 loss: 0.000041
+03-21 19:46 DEBUG    Epoch: 2 Loss: 0.274089 L2 loss: 0.000052
+03-21 19:46 DEBUG    Epoch: 3 Loss: 0.247360 L2 loss: 0.000064
+03-21 19:46 DEBUG    Epoch: 4 Loss: 0.137655 L2 loss: 0.000074
+03-21 19:46 DEBUG    Epoch: 5 Loss: 0.685373 L2 loss: 0.000084
+03-21 19:46 DEBUG    Epoch: 6 Loss: 0.032743 L2 loss: 0.000092
+03-21 19:46 DEBUG    Epoch: 7 Loss: 0.004851 L2 loss: 0.000100
+03-21 19:46 DEBUG    Epoch: 8 Loss: 0.028230 L2 loss: 0.000107
+03-21 19:46 DEBUG    Epoch: 9 Loss: 0.005453 L2 loss: 0.000113
+03-21 19:46 DEBUG    >> Training accuracy: 0.991525
+03-21 19:46 DEBUG    >> Test accuracy: 0.754400
+03-21 19:46 DEBUG     ** Training complete **
+03-21 19:46 DEBUG    Training network 6
+03-21 19:46 DEBUG    n_training: 25
+03-21 19:46 DEBUG    n_test: 313
+03-21 19:46 DEBUG    >> Pre-Training Training accuracy: 0.112549
+03-21 19:46 DEBUG    >> Pre-Training Test accuracy: 0.069800
+03-21 19:46 DEBUG    Epoch: 0 Loss: 1.841187 L2 loss: 0.000041
+03-21 19:46 DEBUG    Epoch: 1 Loss: 0.492606 L2 loss: 0.000064
+03-21 19:46 DEBUG    Epoch: 2 Loss: 0.245735 L2 loss: 0.000084
+03-21 19:46 DEBUG    Epoch: 3 Loss: 0.347365 L2 loss: 0.000102
+03-21 19:46 DEBUG    Epoch: 4 Loss: 1.057514 L2 loss: 0.000121
+03-21 19:46 DEBUG    Epoch: 5 Loss: 0.176372 L2 loss: 0.000140
+03-21 19:46 DEBUG    Epoch: 6 Loss: 0.034831 L2 loss: 0.000154
+03-21 19:46 DEBUG    Epoch: 7 Loss: 0.047856 L2 loss: 0.000169
+03-21 19:46 DEBUG    Epoch: 8 Loss: 0.109783 L2 loss: 0.000182
+03-21 19:46 DEBUG    Epoch: 9 Loss: 0.010763 L2 loss: 0.000196
+03-21 19:46 DEBUG    >> Training accuracy: 0.993532
+03-21 19:46 DEBUG    >> Test accuracy: 0.817700
+03-21 19:46 DEBUG     ** Training complete **
+03-21 19:46 DEBUG    Training network 7
+03-21 19:46 DEBUG    n_training: 24
+03-21 19:46 DEBUG    n_test: 313
+03-21 19:46 DEBUG    >> Pre-Training Training accuracy: 0.041333
+03-21 19:46 DEBUG    >> Pre-Training Test accuracy: 0.072200
+03-21 19:46 DEBUG    Epoch: 0 Loss: 1.115030 L2 loss: 0.000032
+03-21 19:46 DEBUG    Epoch: 1 Loss: 0.758435 L2 loss: 0.000046
+03-21 19:46 DEBUG    Epoch: 2 Loss: 0.815947 L2 loss: 0.000059
+03-21 19:46 DEBUG    Epoch: 3 Loss: 0.350078 L2 loss: 0.000074
+03-21 19:46 DEBUG    Epoch: 4 Loss: 0.385577 L2 loss: 0.000088
+03-21 19:46 DEBUG    Epoch: 5 Loss: 0.209879 L2 loss: 0.000099
+03-21 19:46 DEBUG    Epoch: 6 Loss: 0.243358 L2 loss: 0.000111
+03-21 19:46 DEBUG    Epoch: 7 Loss: 0.154698 L2 loss: 0.000122
+03-21 19:46 DEBUG    Epoch: 8 Loss: 0.149270 L2 loss: 0.000134
+03-21 19:46 DEBUG    Epoch: 9 Loss: 0.487161 L2 loss: 0.000146
+03-21 19:46 DEBUG    >> Training accuracy: 0.972000
+03-21 19:46 DEBUG    >> Test accuracy: 0.759900
+03-21 19:46 DEBUG     ** Training complete **
+03-21 19:46 DEBUG    Training network 8
+03-21 19:46 DEBUG    n_training: 16
+03-21 19:46 DEBUG    n_test: 313
+03-21 19:46 DEBUG    >> Pre-Training Training accuracy: 0.082661
+03-21 19:46 DEBUG    >> Pre-Training Test accuracy: 0.093200
+03-21 19:46 DEBUG    Epoch: 0 Loss: 1.253263 L2 loss: 0.000035
+03-21 19:46 DEBUG    Epoch: 1 Loss: 0.886043 L2 loss: 0.000053
+03-21 19:46 DEBUG    Epoch: 2 Loss: 0.418627 L2 loss: 0.000070
+03-21 19:46 DEBUG    Epoch: 3 Loss: 0.477059 L2 loss: 0.000085
+03-21 19:46 DEBUG    Epoch: 4 Loss: 0.104827 L2 loss: 0.000098
+03-21 19:46 DEBUG    Epoch: 5 Loss: 0.092524 L2 loss: 0.000110
+03-21 19:46 DEBUG    Epoch: 6 Loss: 0.122463 L2 loss: 0.000120
+03-21 19:46 DEBUG    Epoch: 7 Loss: 0.051908 L2 loss: 0.000128
+03-21 19:46 DEBUG    Epoch: 8 Loss: 0.041599 L2 loss: 0.000136
+03-21 19:46 DEBUG    Epoch: 9 Loss: 0.076728 L2 loss: 0.000143
+03-21 19:46 DEBUG    >> Training accuracy: 1.000000
+03-21 19:46 DEBUG    >> Test accuracy: 0.779900
+03-21 19:46 DEBUG     ** Training complete **
+03-21 19:46 DEBUG    Training network 9
+03-21 19:46 DEBUG    n_training: 1694
+03-21 19:46 DEBUG    n_test: 313
+03-21 19:46 DEBUG    >> Pre-Training Training accuracy: 0.146321
+03-21 19:46 DEBUG    >> Pre-Training Test accuracy: 0.152000
+03-21 19:46 DEBUG    Epoch: 0 Loss: 0.063337 L2 loss: 0.002545
+03-21 19:47 DEBUG    Epoch: 1 Loss: 0.021332 L2 loss: 0.004055
+03-21 19:47 DEBUG    Epoch: 2 Loss: 0.014772 L2 loss: 0.005245
+03-21 19:47 DEBUG    Epoch: 3 Loss: 0.668854 L2 loss: 0.006366
+03-21 19:47 DEBUG    Epoch: 4 Loss: 0.065492 L2 loss: 0.007171
+03-21 19:47 DEBUG    Epoch: 5 Loss: 0.346544 L2 loss: 0.007991
+03-21 19:47 DEBUG    Epoch: 6 Loss: 0.009340 L2 loss: 0.008751
+03-21 19:48 DEBUG    Epoch: 7 Loss: 0.131988 L2 loss: 0.009428
+03-21 19:48 DEBUG    Epoch: 8 Loss: 0.220606 L2 loss: 0.009993
+03-21 19:48 DEBUG    Epoch: 9 Loss: 0.011033 L2 loss: 0.010821
+03-21 19:48 DEBUG    >> Training accuracy: 0.988246
+03-21 19:48 DEBUG    >> Test accuracy: 0.972500
+03-21 19:48 DEBUG     ** Training complete **
+03-21 19:48 DEBUG    **************************************************
+03-21 19:48 DEBUG    Running experiments 
+
+03-21 19:48 DEBUG    Uniform ensemble (Train acc): 0.915383
+03-21 19:48 DEBUG    Uniform ensemble (Test acc): 0.916900
+03-21 19:49 DEBUG    ****** PDM matching ******** 
+03-21 19:49 DEBUG    Best Sigma0: 1.0. Best sigma: 1.0 Best gamma: 1.0. Best Test accuracy: 0.9702. Train acc: 0.9847833333333333. 
+
+03-21 19:49 DEBUG    PDM log: {(1.0, 1.0, 1.0): {'shapes': [(784, 136), (136,), (136, 10), (10,)], 'train_accuracy': 0.9847833333333333, 'test_accuracy': 0.9702}} 
+03-21 19:49 DEBUG    Running Iterative PDM matching procedure
+03-21 19:49 DEBUG    Parameter setting: sigma0 = 1.000000, sigma = 1.000000, gamma = 1.000000
+03-21 19:49 DEBUG    Communication: 0, Train acc: 0.984100, Test acc: 0.969900, Shapes: [(784, 133), (133,), (133, 10), (10,)]
+03-21 19:49 DEBUG    CENTRAL MODEL CONFUSION MATRIX
+03-21 19:49 DEBUG    Train data confusion matrix: 
+ [[5856    0    3    0    5    3   13    0   42    1]
+ [   0 6595   21    9    4    3    0   10   91    9]
+ [   6    0 5850   26   11    0    1   25   38    1]
+ [   1    1   10 6009    1   41    0    5   45   18]
+ [   5    3    6    0 5781    0    5    1    8   33]
+ [   1    4    3   10    2 5305   14    0   62   20]
+ [  22    1    0    0    9    8 5819    0   59    0]
+ [   2   10   12   15   13    1    0 6158   10   44]
+ [   0    2    4    7    1    3    0    1 5827    6]
+ [   8    3    0   11   43    5    0    5   28 5846]]
+03-21 19:49 DEBUG    Test data confusion matrix: 
+ [[ 970    0    0    1    1    0    2    0    5    1]
+ [   0 1105    2    3    0    1    1    1   21    1]
+ [   3    0  998    4    6    1    2    5   13    0]
+ [   0    0    2  978    0   10    0    4   13    3]
+ [   0    0    5    0  960    0    3    2    6    6]
+ [   2    0    0    8    1  854    4    1   20    2]
+ [   7    2    0    1    4    5  925    0   14    0]
+ [   3    4    8    7    2    0    0  979    8   17]
+ [   2    0    5    2    4    0    0    4  953    4]
+ [   3    3    0    6   12    3    1    1    3  977]]
+03-21 19:49 DEBUG    Training network 0
+03-21 19:49 DEBUG    n_training: 26
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.146489
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:49 DEBUG    Epoch: 0 Loss: 0.557935 L2 loss: 0.000021
+03-21 19:49 DEBUG    Epoch: 1 Loss: 0.452444 L2 loss: 0.000042
+03-21 19:49 DEBUG    Epoch: 2 Loss: 0.078860 L2 loss: 0.000059
+03-21 19:49 DEBUG    Epoch: 3 Loss: 0.111555 L2 loss: 0.000076
+03-21 19:49 DEBUG    Epoch: 4 Loss: 0.064420 L2 loss: 0.000092
+03-21 19:49 DEBUG    >> Training accuracy: 0.978208
+03-21 19:49 DEBUG    >> Test accuracy: 0.787300
+03-21 19:49 DEBUG     ** Training complete **
+03-21 19:49 DEBUG    Training network 1
+03-21 19:49 DEBUG    n_training: 25
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.096734
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:49 DEBUG    Epoch: 0 Loss: 0.442203 L2 loss: 0.000017
+03-21 19:49 DEBUG    Epoch: 1 Loss: 0.367807 L2 loss: 0.000035
+03-21 19:49 DEBUG    Epoch: 2 Loss: 0.285990 L2 loss: 0.000047
+03-21 19:49 DEBUG    Epoch: 3 Loss: 0.248705 L2 loss: 0.000060
+03-21 19:49 DEBUG    Epoch: 4 Loss: 0.127119 L2 loss: 0.000074
+03-21 19:49 DEBUG    >> Training accuracy: 0.981156
+03-21 19:49 DEBUG    >> Test accuracy: 0.740300
+03-21 19:49 DEBUG     ** Training complete **
+03-21 19:49 DEBUG    Training network 2
+03-21 19:49 DEBUG    n_training: 23
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.201923
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:49 DEBUG    Epoch: 0 Loss: 0.763840 L2 loss: 0.000010
+03-21 19:49 DEBUG    Epoch: 1 Loss: 0.711841 L2 loss: 0.000023
+03-21 19:49 DEBUG    Epoch: 2 Loss: 0.365515 L2 loss: 0.000036
+03-21 19:49 DEBUG    Epoch: 3 Loss: 0.223266 L2 loss: 0.000048
+03-21 19:49 DEBUG    Epoch: 4 Loss: 0.515940 L2 loss: 0.000061
+03-21 19:49 DEBUG    >> Training accuracy: 0.938187
+03-21 19:49 DEBUG    >> Test accuracy: 0.736600
+03-21 19:49 DEBUG     ** Training complete **
+03-21 19:49 DEBUG    Training network 3
+03-21 19:49 DEBUG    n_training: 16
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.040568
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:49 DEBUG    Epoch: 0 Loss: 0.800807 L2 loss: 0.000008
+03-21 19:49 DEBUG    Epoch: 1 Loss: 0.547787 L2 loss: 0.000021
+03-21 19:49 DEBUG    Epoch: 2 Loss: 0.361783 L2 loss: 0.000033
+03-21 19:49 DEBUG    Epoch: 3 Loss: 0.264653 L2 loss: 0.000043
+03-21 19:49 DEBUG    Epoch: 4 Loss: 0.139985 L2 loss: 0.000054
+03-21 19:49 DEBUG    >> Training accuracy: 0.961460
+03-21 19:49 DEBUG    >> Test accuracy: 0.795600
+03-21 19:49 DEBUG     ** Training complete **
+03-21 19:49 DEBUG    Training network 4
+03-21 19:49 DEBUG    n_training: 19
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.028912
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:49 DEBUG    Epoch: 0 Loss: 0.504538 L2 loss: 0.000009
+03-21 19:49 DEBUG    Epoch: 1 Loss: 0.600520 L2 loss: 0.000018
+03-21 19:49 DEBUG    Epoch: 2 Loss: 0.223650 L2 loss: 0.000026
+03-21 19:49 DEBUG    Epoch: 3 Loss: 0.037795 L2 loss: 0.000034
+03-21 19:49 DEBUG    Epoch: 4 Loss: 0.059583 L2 loss: 0.000042
+03-21 19:49 DEBUG    >> Training accuracy: 0.976190
+03-21 19:49 DEBUG    >> Test accuracy: 0.594600
+03-21 19:49 DEBUG     ** Training complete **
+03-21 19:49 DEBUG    Training network 5
+03-21 19:49 DEBUG    n_training: 12
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.045198
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:49 DEBUG    Epoch: 0 Loss: 1.665965 L2 loss: 0.000008
+03-21 19:49 DEBUG    Epoch: 1 Loss: 0.589973 L2 loss: 0.000019
+03-21 19:49 DEBUG    Epoch: 2 Loss: 0.667796 L2 loss: 0.000030
+03-21 19:49 DEBUG    Epoch: 3 Loss: 0.203761 L2 loss: 0.000040
+03-21 19:49 DEBUG    Epoch: 4 Loss: 0.058653 L2 loss: 0.000050
+03-21 19:49 DEBUG    >> Training accuracy: 0.932203
+03-21 19:49 DEBUG    >> Test accuracy: 0.715800
+03-21 19:49 DEBUG     ** Training complete **
+03-21 19:49 DEBUG    Training network 6
+03-21 19:49 DEBUG    n_training: 25
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.089263
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:49 DEBUG    Epoch: 0 Loss: 0.617743 L2 loss: 0.000018
+03-21 19:49 DEBUG    Epoch: 1 Loss: 0.560191 L2 loss: 0.000037
+03-21 19:49 DEBUG    Epoch: 2 Loss: 0.218396 L2 loss: 0.000052
+03-21 19:49 DEBUG    Epoch: 3 Loss: 0.097774 L2 loss: 0.000066
+03-21 19:49 DEBUG    Epoch: 4 Loss: 0.076387 L2 loss: 0.000080
+03-21 19:49 DEBUG    >> Training accuracy: 0.971539
+03-21 19:49 DEBUG    >> Test accuracy: 0.820200
+03-21 19:49 DEBUG     ** Training complete **
+03-21 19:49 DEBUG    Training network 7
+03-21 19:49 DEBUG    n_training: 24
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.062667
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:49 DEBUG    Epoch: 0 Loss: 0.745838 L2 loss: 0.000011
+03-21 19:49 DEBUG    Epoch: 1 Loss: 0.414688 L2 loss: 0.000026
+03-21 19:49 DEBUG    Epoch: 2 Loss: 0.135180 L2 loss: 0.000040
+03-21 19:49 DEBUG    Epoch: 3 Loss: 0.216466 L2 loss: 0.000053
+03-21 19:49 DEBUG    Epoch: 4 Loss: 0.522036 L2 loss: 0.000066
+03-21 19:49 DEBUG    >> Training accuracy: 0.942667
+03-21 19:49 DEBUG    >> Test accuracy: 0.765000
+03-21 19:49 DEBUG     ** Training complete **
+03-21 19:49 DEBUG    Training network 8
+03-21 19:49 DEBUG    n_training: 16
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.129032
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.097500
+03-21 19:49 DEBUG    Epoch: 0 Loss: 0.924764 L2 loss: 0.000007
+03-21 19:49 DEBUG    Epoch: 1 Loss: 0.525288 L2 loss: 0.000019
+03-21 19:49 DEBUG    Epoch: 2 Loss: 0.422293 L2 loss: 0.000033
+03-21 19:49 DEBUG    Epoch: 3 Loss: 0.224460 L2 loss: 0.000046
+03-21 19:49 DEBUG    Epoch: 4 Loss: 0.242053 L2 loss: 0.000060
+03-21 19:49 DEBUG    >> Training accuracy: 0.963710
+03-21 19:49 DEBUG    >> Test accuracy: 0.761900
+03-21 19:49 DEBUG     ** Training complete **
+03-21 19:49 DEBUG    Training network 9
+03-21 19:49 DEBUG    n_training: 1694
+03-21 19:49 DEBUG    n_test: 313
+03-21 19:49 DEBUG    >> Pre-Training Training accuracy: 0.985552
+03-21 19:49 DEBUG    >> Pre-Training Test accuracy: 0.969500
+03-21 19:49 DEBUG    Epoch: 0 Loss: 0.142655 L2 loss: 0.001561
+03-21 19:50 DEBUG    Epoch: 1 Loss: 0.007215 L2 loss: 0.002543
+03-21 19:50 DEBUG    Epoch: 2 Loss: 0.060890 L2 loss: 0.003309
+03-21 19:50 DEBUG    Epoch: 3 Loss: 0.003945 L2 loss: 0.003896
+03-21 19:50 DEBUG    Epoch: 4 Loss: 0.017392 L2 loss: 0.004529
+03-21 19:50 DEBUG    >> Training accuracy: 0.982194
+03-21 19:50 DEBUG    >> Test accuracy: 0.967500
+03-21 19:50 DEBUG     ** Training complete **
+03-21 19:50 DEBUG    Communication: 1, Train acc: 0.978517, Test acc: 0.966100, Shapes: [(784, 130), (130,), (130, 10), (10,)]
+03-21 19:50 DEBUG    CENTRAL MODEL CONFUSION MATRIX
+03-21 19:50 DEBUG    Train data confusion matrix: 
+ [[5891    0    0    0    0    0    0    0   30    2]
+ [   0 6685   15    4    3    0    0    8   26    1]
+ [  28    9 5764   38    2    1    0   67   48    1]
+ [   4    5    8 5988    0   12    1   16   59   38]
+ [  19   11    2    0 5682    0    7   16   17   88]
+ [  18    7    3   75    1 5180    3    1   89   44]
+ [  65   13    1    0   19   45 5685    0   90    0]
+ [   9   11   10    3    4    0    0 6207    6   15]
+ [   8   18    7    7    3    2    0    5 5783   18]
+ [  18   14    0    6    8    7    0   26   24 5846]]
+03-21 19:50 DEBUG    Test data confusion matrix: 
+ [[ 973    0    0    1    0    0    0    1    3    2]
+ [   0 1116    2    1    0    0    2    1   13    0]
+ [   7    0  981    9    1    1    2   13   18    0]
+ [   2    0    4  979    0    5    0    4    7    9]
+ [   5    2    3    1  941    0    3    4    7   16]
+ [   3    2    0   26    0  828    3    3   19    8]
+ [  13    4    1    1    4   12  907    0   16    0]
+ [   3    2    7    3    0    0    0 1004    4    5]
+ [   8    2    2    1    2    0    1    3  951    4]
+ [   3    7    0    3    5    1    0    3    6  981]]
+03-21 19:50 DEBUG    Training network 0
+03-21 19:50 DEBUG    n_training: 26
+03-21 19:50 DEBUG    n_test: 313
+03-21 19:50 DEBUG    >> Pre-Training Training accuracy: 0.146489
+03-21 19:50 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:50 DEBUG    Epoch: 0 Loss: 0.286446 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 1 Loss: 0.371115 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 2 Loss: 0.416338 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 3 Loss: 0.364073 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 4 Loss: 0.147262 L2 loss: 0.000000
+03-21 19:50 DEBUG    >> Training accuracy: 0.986683
+03-21 19:50 DEBUG    >> Test accuracy: 0.808400
+03-21 19:50 DEBUG     ** Training complete **
+03-21 19:50 DEBUG    Training network 1
+03-21 19:50 DEBUG    n_training: 25
+03-21 19:50 DEBUG    n_test: 313
+03-21 19:50 DEBUG    >> Pre-Training Training accuracy: 0.096734
+03-21 19:50 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:50 DEBUG    Epoch: 0 Loss: 0.610763 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 1 Loss: 0.300858 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 2 Loss: 0.346796 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 3 Loss: 0.217445 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 4 Loss: 0.104570 L2 loss: 0.000000
+03-21 19:50 DEBUG    >> Training accuracy: 0.984925
+03-21 19:50 DEBUG    >> Test accuracy: 0.756200
+03-21 19:50 DEBUG     ** Training complete **
+03-21 19:50 DEBUG    Training network 2
+03-21 19:50 DEBUG    n_training: 23
+03-21 19:50 DEBUG    n_test: 313
+03-21 19:50 DEBUG    >> Pre-Training Training accuracy: 0.201923
+03-21 19:50 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:50 DEBUG    Epoch: 0 Loss: 0.770823 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 1 Loss: 0.494124 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 2 Loss: 0.253977 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 3 Loss: 0.249441 L2 loss: 0.000000
+03-21 19:50 DEBUG    Epoch: 4 Loss: 0.108401 L2 loss: 0.000000
+03-21 19:50 DEBUG    >> Training accuracy: 0.957418
+03-21 19:50 DEBUG    >> Test accuracy: 0.763800
+03-21 19:50 DEBUG     ** Training complete **
+03-21 19:50 DEBUG    Training network 3
+03-21 19:50 DEBUG    n_training: 16
+03-21 19:50 DEBUG    n_test: 313
+03-21 19:51 DEBUG    >> Pre-Training Training accuracy: 0.062880
+03-21 19:51 DEBUG    >> Pre-Training Test accuracy: 0.122600
+03-21 19:51 DEBUG    Epoch: 0 Loss: 0.547452 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 1 Loss: 0.345510 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 2 Loss: 0.772186 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 3 Loss: 0.049421 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 4 Loss: 0.089014 L2 loss: 0.000000
+03-21 19:51 DEBUG    >> Training accuracy: 0.963489
+03-21 19:51 DEBUG    >> Test accuracy: 0.798400
+03-21 19:51 DEBUG     ** Training complete **
+03-21 19:51 DEBUG    Training network 4
+03-21 19:51 DEBUG    n_training: 19
+03-21 19:51 DEBUG    n_test: 313
+03-21 19:51 DEBUG    >> Pre-Training Training accuracy: 0.028912
+03-21 19:51 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:51 DEBUG    Epoch: 0 Loss: 0.986277 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 1 Loss: 0.161227 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 2 Loss: 0.056909 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 3 Loss: 0.054736 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 4 Loss: 0.080341 L2 loss: 0.000000
+03-21 19:51 DEBUG    >> Training accuracy: 0.965986
+03-21 19:51 DEBUG    >> Test accuracy: 0.591600
+03-21 19:51 DEBUG     ** Training complete **
+03-21 19:51 DEBUG    Training network 5
+03-21 19:51 DEBUG    n_training: 12
+03-21 19:51 DEBUG    n_test: 313
+03-21 19:51 DEBUG    >> Pre-Training Training accuracy: 0.067797
+03-21 19:51 DEBUG    >> Pre-Training Test accuracy: 0.105900
+03-21 19:51 DEBUG    Epoch: 0 Loss: 0.212672 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 1 Loss: 0.675926 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 2 Loss: 0.060477 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 3 Loss: 0.028433 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 4 Loss: 0.007574 L2 loss: 0.000000
+03-21 19:51 DEBUG    >> Training accuracy: 0.946328
+03-21 19:51 DEBUG    >> Test accuracy: 0.722700
+03-21 19:51 DEBUG     ** Training complete **
+03-21 19:51 DEBUG    Training network 6
+03-21 19:51 DEBUG    n_training: 25
+03-21 19:51 DEBUG    n_test: 313
+03-21 19:51 DEBUG    >> Pre-Training Training accuracy: 0.089263
+03-21 19:51 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:51 DEBUG    Epoch: 0 Loss: 0.304243 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 1 Loss: 0.604349 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 2 Loss: 0.131959 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 3 Loss: 0.045703 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 4 Loss: 0.134345 L2 loss: 0.000000
+03-21 19:51 DEBUG    >> Training accuracy: 0.972833
+03-21 19:51 DEBUG    >> Test accuracy: 0.811300
+03-21 19:51 DEBUG     ** Training complete **
+03-21 19:51 DEBUG    Training network 7
+03-21 19:51 DEBUG    n_training: 24
+03-21 19:51 DEBUG    n_test: 313
+03-21 19:51 DEBUG    >> Pre-Training Training accuracy: 0.062667
+03-21 19:51 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:51 DEBUG    Epoch: 0 Loss: 0.687029 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 1 Loss: 0.143485 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 2 Loss: 0.213921 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 3 Loss: 0.359770 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 4 Loss: 0.119924 L2 loss: 0.000000
+03-21 19:51 DEBUG    >> Training accuracy: 0.942667
+03-21 19:51 DEBUG    >> Test accuracy: 0.766900
+03-21 19:51 DEBUG     ** Training complete **
+03-21 19:51 DEBUG    Training network 8
+03-21 19:51 DEBUG    n_training: 16
+03-21 19:51 DEBUG    n_test: 313
+03-21 19:51 DEBUG    >> Pre-Training Training accuracy: 0.157258
+03-21 19:51 DEBUG    >> Pre-Training Test accuracy: 0.143200
+03-21 19:51 DEBUG    Epoch: 0 Loss: 0.919125 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 1 Loss: 0.467628 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 2 Loss: 0.436721 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 3 Loss: 0.309578 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 4 Loss: 0.417618 L2 loss: 0.000000
+03-21 19:51 DEBUG    >> Training accuracy: 0.955645
+03-21 19:51 DEBUG    >> Test accuracy: 0.760900
+03-21 19:51 DEBUG     ** Training complete **
+03-21 19:51 DEBUG    Training network 9
+03-21 19:51 DEBUG    n_training: 1694
+03-21 19:51 DEBUG    n_test: 313
+03-21 19:51 DEBUG    >> Pre-Training Training accuracy: 0.976991
+03-21 19:51 DEBUG    >> Pre-Training Test accuracy: 0.962600
+03-21 19:51 DEBUG    Epoch: 0 Loss: 0.020306 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 1 Loss: 0.041652 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 2 Loss: 0.013120 L2 loss: 0.000000
+03-21 19:51 DEBUG    Epoch: 3 Loss: 0.056012 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.092579 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.984353
+03-21 19:52 DEBUG    >> Test accuracy: 0.970000
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Communication: 2, Train acc: 0.981367, Test acc: 0.968700, Shapes: [(784, 132), (132,), (132, 10), (10,)]
+03-21 19:52 DEBUG    CENTRAL MODEL CONFUSION MATRIX
+03-21 19:52 DEBUG    Train data confusion matrix: 
+ [[5852    0    1    1    4    1   11    0   52    1]
+ [   0 6575   18    3   10    1    4   16  106    9]
+ [   3    1 5894   24    4    1    2    5   23    1]
+ [   0    1   15 6049    0   17    0    0   29   20]
+ [   4    0    4    0 5752    0    8    2    8   64]
+ [   5    1    3   61    0 5250   22    1   43   35]
+ [   7    0    3    0    6   12 5872    0   18    0]
+ [   4    9   41   46   14    1    0 6009   34  107]
+ [   4    0   10    7    3    9    3    2 5808    5]
+ [   4    5    1   24   53    1    1    8   31 5821]]
+03-21 19:52 DEBUG    Test data confusion matrix: 
+ [[ 967    0    0    1    0    2    3    0    6    1]
+ [   0 1098    5    2    0    2    2    1   25    0]
+ [   4    0 1009    5    1    0    1    3    9    0]
+ [   0    0    5  986    0    3    0    3    8    5]
+ [   1    0    3    0  948    0    5    2    3   20]
+ [   4    0    0   17    1  845    7    1   13    4]
+ [   3    2    0    0    6    6  933    0    8    0]
+ [   2    2   14   14    2    0    0  967    5   22]
+ [   3    0    3    2    1    2    1    1  959    2]
+ [   0    4    0    5   11    2    1    2    9  975]]
+03-21 19:52 DEBUG    Training network 0
+03-21 19:52 DEBUG    n_training: 26
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.146489
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:52 DEBUG    Epoch: 0 Loss: 0.311112 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 1 Loss: 0.225297 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 2 Loss: 0.131682 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 3 Loss: 0.276881 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.078093 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.979419
+03-21 19:52 DEBUG    >> Test accuracy: 0.796900
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Training network 1
+03-21 19:52 DEBUG    n_training: 25
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.096734
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:52 DEBUG    Epoch: 0 Loss: 0.328333 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 1 Loss: 0.189675 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 2 Loss: 0.057216 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 3 Loss: 0.162636 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.051213 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.989950
+03-21 19:52 DEBUG    >> Test accuracy: 0.751900
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Training network 2
+03-21 19:52 DEBUG    n_training: 23
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.201923
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:52 DEBUG    Epoch: 0 Loss: 0.918326 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 1 Loss: 0.256175 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 2 Loss: 0.242430 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 3 Loss: 0.223098 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.194394 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.942308
+03-21 19:52 DEBUG    >> Test accuracy: 0.740800
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Training network 3
+03-21 19:52 DEBUG    n_training: 16
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.040568
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:52 DEBUG    Epoch: 0 Loss: 0.494762 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 1 Loss: 0.149269 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 2 Loss: 0.305617 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 3 Loss: 0.226292 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.071821 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.967546
+03-21 19:52 DEBUG    >> Test accuracy: 0.795700
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Training network 4
+03-21 19:52 DEBUG    n_training: 19
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.028912
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:52 DEBUG    Epoch: 0 Loss: 1.183233 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 1 Loss: 0.131137 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 2 Loss: 0.336878 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 3 Loss: 0.223985 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.554807 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.976190
+03-21 19:52 DEBUG    >> Test accuracy: 0.591200
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Training network 5
+03-21 19:52 DEBUG    n_training: 12
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.045198
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:52 DEBUG    Epoch: 0 Loss: 2.621409 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 1 Loss: 0.764116 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 2 Loss: 0.494039 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 3 Loss: 0.139958 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.044799 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.940678
+03-21 19:52 DEBUG    >> Test accuracy: 0.722800
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Training network 6
+03-21 19:52 DEBUG    n_training: 25
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.089263
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:52 DEBUG    Epoch: 0 Loss: 0.561334 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 1 Loss: 0.105450 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 2 Loss: 0.085383 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 3 Loss: 0.045353 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.090397 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.975420
+03-21 19:52 DEBUG    >> Test accuracy: 0.837500
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Training network 7
+03-21 19:52 DEBUG    n_training: 24
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.062667
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:52 DEBUG    Epoch: 0 Loss: 1.026446 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 1 Loss: 0.332310 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 2 Loss: 0.173225 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 3 Loss: 0.255437 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.249093 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.961333
+03-21 19:52 DEBUG    >> Test accuracy: 0.777700
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Training network 8
+03-21 19:52 DEBUG    n_training: 16
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.129032
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:52 DEBUG    Epoch: 0 Loss: 0.958502 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 1 Loss: 0.460912 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 2 Loss: 0.115534 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 3 Loss: 0.176325 L2 loss: 0.000000
+03-21 19:52 DEBUG    Epoch: 4 Loss: 0.180106 L2 loss: 0.000000
+03-21 19:52 DEBUG    >> Training accuracy: 0.981855
+03-21 19:52 DEBUG    >> Test accuracy: 0.787100
+03-21 19:52 DEBUG     ** Training complete **
+03-21 19:52 DEBUG    Training network 9
+03-21 19:52 DEBUG    n_training: 1694
+03-21 19:52 DEBUG    n_test: 313
+03-21 19:52 DEBUG    >> Pre-Training Training accuracy: 0.981438
+03-21 19:52 DEBUG    >> Pre-Training Test accuracy: 0.965800
+03-21 19:53 DEBUG    Epoch: 0 Loss: 0.004394 L2 loss: 0.000000
+03-21 19:53 DEBUG    Epoch: 1 Loss: 0.008079 L2 loss: 0.000000
+03-21 19:53 DEBUG    Epoch: 2 Loss: 0.001610 L2 loss: 0.000000
+03-21 19:53 DEBUG    Epoch: 3 Loss: 0.320704 L2 loss: 0.000000
+03-21 19:53 DEBUG    Epoch: 4 Loss: 0.098589 L2 loss: 0.000000
+03-21 19:53 DEBUG    >> Training accuracy: 0.984519
+03-21 19:53 DEBUG    >> Test accuracy: 0.968500
+03-21 19:53 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Communication: 3, Train acc: 0.980433, Test acc: 0.965200, Shapes: [(784, 132), (132,), (132, 10), (10,)]
+03-21 19:54 DEBUG    CENTRAL MODEL CONFUSION MATRIX
+03-21 19:54 DEBUG    Train data confusion matrix: 
+ [[5884    0    1    1    1    1    1    0   32    2]
+ [   0 6680    6    5    8    0    2    4   35    2]
+ [  32    5 5810   21   11    0    2    6   70    1]
+ [   0    1   16 5964    2   10    0    5   71   62]
+ [  11    4    3    0 5754    0    2    4   16   48]
+ [  13    2    2   43   10 5185   37    0  108   21]
+ [  35    2    0    0   40    7 5795    0   39    0]
+ [   3   19   26    8    7    0    0 6159   13   30]
+ [   5    5    1    8    5    0    2    0 5820    5]
+ [   8    9    0    5   79    5    0    8   60 5775]]
+03-21 19:54 DEBUG    Test data confusion matrix: 
+ [[ 972    0    1    0    1    0    1    0    3    2]
+ [   0 1116    5    1    2    0    2    0    9    0]
+ [   8    2  984    8    4    0    3    3   20    0]
+ [   0    0    9  963    1    3    0    2   11   21]
+ [   3    0    3    0  957    0    3    2    5    9]
+ [   6    0    1   18    2  831    8    2   18    6]
+ [   8    3    0    1   10    4  918    0   14    0]
+ [   2    5   12    4    2    0    0  990    8    5]
+ [   3    0    1    3    1    0    1    0  961    4]
+ [   3    5    0    1   20    0    0    2   18  960]]
+03-21 19:54 DEBUG    Training network 0
+03-21 19:54 DEBUG    n_training: 26
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.146489
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:54 DEBUG    Epoch: 0 Loss: 0.465400 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.338656 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 2 Loss: 0.292583 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 3 Loss: 0.160674 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 4 Loss: 0.088737 L2 loss: 0.000000
+03-21 19:54 DEBUG    >> Training accuracy: 0.975787
+03-21 19:54 DEBUG    >> Test accuracy: 0.796900
+03-21 19:54 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Training network 1
+03-21 19:54 DEBUG    n_training: 25
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.096734
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:54 DEBUG    Epoch: 0 Loss: 0.338421 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.413667 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 2 Loss: 0.181413 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 3 Loss: 0.096787 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 4 Loss: 0.083054 L2 loss: 0.000000
+03-21 19:54 DEBUG    >> Training accuracy: 0.988693
+03-21 19:54 DEBUG    >> Test accuracy: 0.760300
+03-21 19:54 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Training network 2
+03-21 19:54 DEBUG    n_training: 23
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.201923
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:54 DEBUG    Epoch: 0 Loss: 0.695251 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.590140 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 2 Loss: 0.155221 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 3 Loss: 0.163242 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 4 Loss: 0.129362 L2 loss: 0.000000
+03-21 19:54 DEBUG    >> Training accuracy: 0.950549
+03-21 19:54 DEBUG    >> Test accuracy: 0.762200
+03-21 19:54 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Training network 3
+03-21 19:54 DEBUG    n_training: 16
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.040568
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:54 DEBUG    Epoch: 0 Loss: 0.530928 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.348941 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 2 Loss: 0.366247 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 3 Loss: 0.147408 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 4 Loss: 0.146435 L2 loss: 0.000000
+03-21 19:54 DEBUG    >> Training accuracy: 0.965517
+03-21 19:54 DEBUG    >> Test accuracy: 0.808800
+03-21 19:54 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Training network 4
+03-21 19:54 DEBUG    n_training: 19
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.028912
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:54 DEBUG    Epoch: 0 Loss: 0.494017 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.330125 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 2 Loss: 0.166788 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 3 Loss: 0.317131 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 4 Loss: 0.134567 L2 loss: 0.000000
+03-21 19:54 DEBUG    >> Training accuracy: 0.972789
+03-21 19:54 DEBUG    >> Test accuracy: 0.608800
+03-21 19:54 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Training network 5
+03-21 19:54 DEBUG    n_training: 12
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.045198
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:54 DEBUG    Epoch: 0 Loss: 3.148973 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.610266 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 2 Loss: 0.065824 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 3 Loss: 0.234383 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 4 Loss: 0.309345 L2 loss: 0.000000
+03-21 19:54 DEBUG    >> Training accuracy: 0.954802
+03-21 19:54 DEBUG    >> Test accuracy: 0.745300
+03-21 19:54 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Training network 6
+03-21 19:54 DEBUG    n_training: 25
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.089263
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:54 DEBUG    Epoch: 0 Loss: 0.277296 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.252650 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 2 Loss: 0.270834 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 3 Loss: 0.037173 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 4 Loss: 0.017704 L2 loss: 0.000000
+03-21 19:54 DEBUG    >> Training accuracy: 0.978008
+03-21 19:54 DEBUG    >> Test accuracy: 0.849000
+03-21 19:54 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Training network 7
+03-21 19:54 DEBUG    n_training: 24
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.062667
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:54 DEBUG    Epoch: 0 Loss: 0.228356 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.299295 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 2 Loss: 0.104477 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 3 Loss: 0.063119 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 4 Loss: 0.322317 L2 loss: 0.000000
+03-21 19:54 DEBUG    >> Training accuracy: 0.954667
+03-21 19:54 DEBUG    >> Test accuracy: 0.774500
+03-21 19:54 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Training network 8
+03-21 19:54 DEBUG    n_training: 16
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.129032
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:54 DEBUG    Epoch: 0 Loss: 0.860864 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.263167 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 2 Loss: 0.214676 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 3 Loss: 0.364486 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 4 Loss: 0.521273 L2 loss: 0.000000
+03-21 19:54 DEBUG    >> Training accuracy: 0.951613
+03-21 19:54 DEBUG    >> Test accuracy: 0.755000
+03-21 19:54 DEBUG     ** Training complete **
+03-21 19:54 DEBUG    Training network 9
+03-21 19:54 DEBUG    n_training: 1694
+03-21 19:54 DEBUG    n_test: 313
+03-21 19:54 DEBUG    >> Pre-Training Training accuracy: 0.977987
+03-21 19:54 DEBUG    >> Pre-Training Test accuracy: 0.959500
+03-21 19:54 DEBUG    Epoch: 0 Loss: 0.026592 L2 loss: 0.000000
+03-21 19:54 DEBUG    Epoch: 1 Loss: 0.507988 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 2 Loss: 0.004594 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 3 Loss: 0.001549 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 4 Loss: 0.015387 L2 loss: 0.000000
+03-21 19:55 DEBUG    >> Training accuracy: 0.978615
+03-21 19:55 DEBUG    >> Test accuracy: 0.963300
+03-21 19:55 DEBUG     ** Training complete **
+03-21 19:55 DEBUG    Communication: 4, Train acc: 0.979833, Test acc: 0.966900, Shapes: [(784, 127), (127,), (127, 10), (10,)]
+03-21 19:55 DEBUG    CENTRAL MODEL CONFUSION MATRIX
+03-21 19:55 DEBUG    Train data confusion matrix: 
+ [[5852    0   44    1    0    2    0    0   24    0]
+ [   0 6670   26    1    6    1    2   12   22    2]
+ [   4    0 5932    5    0    0    0    1   16    0]
+ [   0    3   60 6007    0   18    0    9   26    8]
+ [   2    8   14    2 5769    0    5    1   24   17]
+ [   3    2    5   63    2 5309    4    2   29    2]
+ [  14    5   29    0    7   62 5680    0  121    0]
+ [   1   13   69   18   17    1    0 6106   15   25]
+ [  25   14   56   26    2    2    1    0 5722    3]
+ [  13    8    3   31   35   10    0   12   94 5743]]
+03-21 19:55 DEBUG    Test data confusion matrix: 
+ [[ 964    0   10    1    0    1    1    1    2    0]
+ [   0 1117    5    2    0    0    2    1    8    0]
+ [   2    0 1020    1    1    0    0    3    5    0]
+ [   0    0   11  984    0    3    0    2    5    5]
+ [   1    2    6    1  952    0    3    2    9    6]
+ [   2    0    0   20    2  847    1    2   16    2]
+ [   6    1    8    0    7   17  900    0   19    0]
+ [   1    3   21    7    2    1    0  981    6    6]
+ [   6    0   13    5    2    1    0    0  945    2]
+ [   5    7    0    6    9    4    0    2   17  959]]
+03-21 19:55 DEBUG    Training network 0
+03-21 19:55 DEBUG    n_training: 26
+03-21 19:55 DEBUG    n_test: 313
+03-21 19:55 DEBUG    >> Pre-Training Training accuracy: 0.146489
+03-21 19:55 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:55 DEBUG    Epoch: 0 Loss: 0.695745 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 1 Loss: 0.294842 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 2 Loss: 0.249255 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 3 Loss: 0.102941 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 4 Loss: 0.276228 L2 loss: 0.000000
+03-21 19:55 DEBUG    >> Training accuracy: 0.973366
+03-21 19:55 DEBUG    >> Test accuracy: 0.784900
+03-21 19:55 DEBUG     ** Training complete **
+03-21 19:55 DEBUG    Training network 1
+03-21 19:55 DEBUG    n_training: 25
+03-21 19:55 DEBUG    n_test: 313
+03-21 19:55 DEBUG    >> Pre-Training Training accuracy: 0.096734
+03-21 19:55 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:55 DEBUG    Epoch: 0 Loss: 0.519760 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 1 Loss: 0.088127 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 2 Loss: 0.466851 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 3 Loss: 0.203147 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 4 Loss: 0.093087 L2 loss: 0.000000
+03-21 19:55 DEBUG    >> Training accuracy: 0.984925
+03-21 19:55 DEBUG    >> Test accuracy: 0.767200
+03-21 19:55 DEBUG     ** Training complete **
+03-21 19:55 DEBUG    Training network 2
+03-21 19:55 DEBUG    n_training: 23
+03-21 19:55 DEBUG    n_test: 313
+03-21 19:55 DEBUG    >> Pre-Training Training accuracy: 0.201923
+03-21 19:55 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:55 DEBUG    Epoch: 0 Loss: 0.667350 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 1 Loss: 0.290005 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 2 Loss: 0.218464 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 3 Loss: 0.298749 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 4 Loss: 0.222845 L2 loss: 0.000000
+03-21 19:55 DEBUG    >> Training accuracy: 0.957418
+03-21 19:55 DEBUG    >> Test accuracy: 0.749700
+03-21 19:55 DEBUG     ** Training complete **
+03-21 19:55 DEBUG    Training network 3
+03-21 19:55 DEBUG    n_training: 16
+03-21 19:55 DEBUG    n_test: 313
+03-21 19:55 DEBUG    >> Pre-Training Training accuracy: 0.040568
+03-21 19:55 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:55 DEBUG    Epoch: 0 Loss: 1.101998 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 1 Loss: 0.552249 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 2 Loss: 0.467793 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 3 Loss: 0.288062 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 4 Loss: 0.066650 L2 loss: 0.000000
+03-21 19:55 DEBUG    >> Training accuracy: 0.953347
+03-21 19:55 DEBUG    >> Test accuracy: 0.778100
+03-21 19:55 DEBUG     ** Training complete **
+03-21 19:55 DEBUG    Training network 4
+03-21 19:55 DEBUG    n_training: 19
+03-21 19:55 DEBUG    n_test: 313
+03-21 19:55 DEBUG    >> Pre-Training Training accuracy: 0.028912
+03-21 19:55 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:55 DEBUG    Epoch: 0 Loss: 0.135587 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 1 Loss: 0.947672 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 2 Loss: 0.108804 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 3 Loss: 0.317448 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 4 Loss: 0.044851 L2 loss: 0.000000
+03-21 19:55 DEBUG    >> Training accuracy: 0.957483
+03-21 19:55 DEBUG    >> Test accuracy: 0.576000
+03-21 19:55 DEBUG     ** Training complete **
+03-21 19:55 DEBUG    Training network 5
+03-21 19:55 DEBUG    n_training: 12
+03-21 19:55 DEBUG    n_test: 313
+03-21 19:55 DEBUG    >> Pre-Training Training accuracy: 0.045198
+03-21 19:55 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:55 DEBUG    Epoch: 0 Loss: 0.307787 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 1 Loss: 1.653948 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 2 Loss: 0.652705 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 3 Loss: 0.007961 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 4 Loss: 0.013477 L2 loss: 0.000000
+03-21 19:55 DEBUG    >> Training accuracy: 0.946328
+03-21 19:55 DEBUG    >> Test accuracy: 0.733100
+03-21 19:55 DEBUG     ** Training complete **
+03-21 19:55 DEBUG    Training network 6
+03-21 19:55 DEBUG    n_training: 25
+03-21 19:55 DEBUG    n_test: 313
+03-21 19:55 DEBUG    >> Pre-Training Training accuracy: 0.089263
+03-21 19:55 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:55 DEBUG    Epoch: 0 Loss: 1.276659 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 1 Loss: 0.307367 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 2 Loss: 0.423177 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 3 Loss: 0.084308 L2 loss: 0.000000
+03-21 19:55 DEBUG    Epoch: 4 Loss: 0.360420 L2 loss: 0.000000
+03-21 19:56 DEBUG    >> Training accuracy: 0.980595
+03-21 19:56 DEBUG    >> Test accuracy: 0.831100
+03-21 19:56 DEBUG     ** Training complete **
+03-21 19:56 DEBUG    Training network 7
+03-21 19:56 DEBUG    n_training: 24
+03-21 19:56 DEBUG    n_test: 313
+03-21 19:56 DEBUG    >> Pre-Training Training accuracy: 0.062667
+03-21 19:56 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:56 DEBUG    Epoch: 0 Loss: 0.687795 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 1 Loss: 0.256942 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 2 Loss: 0.234437 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 3 Loss: 0.091469 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 4 Loss: 0.122027 L2 loss: 0.000000
+03-21 19:56 DEBUG    >> Training accuracy: 0.962667
+03-21 19:56 DEBUG    >> Test accuracy: 0.794400
+03-21 19:56 DEBUG     ** Training complete **
+03-21 19:56 DEBUG    Training network 8
+03-21 19:56 DEBUG    n_training: 16
+03-21 19:56 DEBUG    n_test: 313
+03-21 19:56 DEBUG    >> Pre-Training Training accuracy: 0.129032
+03-21 19:56 DEBUG    >> Pre-Training Test accuracy: 0.097400
+03-21 19:56 DEBUG    Epoch: 0 Loss: 0.869580 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 1 Loss: 0.418995 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 2 Loss: 0.549750 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 3 Loss: 0.415647 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 4 Loss: 0.136266 L2 loss: 0.000000
+03-21 19:56 DEBUG    >> Training accuracy: 0.981855
+03-21 19:56 DEBUG    >> Test accuracy: 0.777900
+03-21 19:56 DEBUG     ** Training complete **
+03-21 19:56 DEBUG    Training network 9
+03-21 19:56 DEBUG    n_training: 1694
+03-21 19:56 DEBUG    n_test: 313
+03-21 19:56 DEBUG    >> Pre-Training Training accuracy: 0.978356
+03-21 19:56 DEBUG    >> Pre-Training Test accuracy: 0.964500
+03-21 19:56 DEBUG    Epoch: 0 Loss: 0.127626 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 1 Loss: 0.288897 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 2 Loss: 0.000837 L2 loss: 0.000000
+03-21 19:56 DEBUG    Epoch: 3 Loss: 0.006729 L2 loss: 0.000000
+03-21 19:57 DEBUG    Epoch: 4 Loss: 0.191173 L2 loss: 0.000000
+03-21 19:57 DEBUG    >> Training accuracy: 0.985829
+03-21 19:57 DEBUG    >> Test accuracy: 0.971300
+03-21 19:57 DEBUG     ** Training complete **
+03-21 19:57 DEBUG    Trial 0 completed
+03-21 19:57 DEBUG    ####################################################################################################

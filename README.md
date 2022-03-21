@@ -1,8 +1,35 @@
-## Probabilistic Federated Neural Matching
+# Paper presentation: Bayesian Nonparametric Federated Learning of Neural Networks
+By Thomas Sepulchre & Grégoire Dutot
 
+This code originaly comes from [https://github.com/IBM/probabilistic-federated-neural-matching], which is the code acompanying the ICML 2019 paper "Bayesian Nonparametric Federated Learning of Neural Networks",  by Mikhail Yurochkin, Mayank Agarwal, Soumya Ghosh, Kristjan Greenewald, Nghia.
 
-This is the code accompanying the ICML 2019 paper "Bayesian Nonparametric Federated Learning of Neural Networks"
-Paper link: [http://proceedings.mlr.press/v97/yurochkin19a.html]
+Original paper link: [http://proceedings.mlr.press/v97/yurochkin19a.html] 
+
+We added some modifications to the code to investigate some functionalities and behaviours, but the original commands still work as normal (see *Sample Commands* in the original **README**).
+
+Our functionnalities can be tested thanks to new commands (used on the CIFAR-10 dataset) : 
+
+### New sample commands
+
+1. Different network sizes : 
+
+`python experiment.py --logdir "logs/mnist_test" --dataset "mnist" --datadir "data/mnist/" --net_config "784, 100, 10 ; 784, 10, 10 ; 784, 10, 10 ; 784, 10, 10 ; 784, 10, 10 ; 784, 10, 10 ; 784, 10, 10 ; 784, 10, 10 ; 784, 10, 10 ; 784, 10, 10" --n_nets 10 --partition "hetero-dir" --experiment "u-ensemble,pdm,pdm_iterative" --lr 0.01 --epochs 10 --reg 1e-6 --communication_rounds 5 --lr_decay 0.99 --iter_epochs 5`
+
+2. Different local batch sizes (Homogeneous case / Split 90 % - 10 %) :
+
+`python experiment.py --logdir "logs/mnist_test" --dataset "mnist" --datadir "data/mnist/" --net_config "784, 100, 10" --n_nets 10 --partition "homo" --experiment "u-ensemble,pdm,pdm_iterative" --lr 0.01 --epochs 10 --reg 1e-6 --communication_rounds 5 --lr_decay 0.99 --iter_epochs 5 --alpha "0.91, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01" `
+
+3. Different local batch sizes (Heterogenous case / Approximate split 90 % - 10 %) :
+
+`python experiment.py --logdir "logs/mnist_test" --dataset "mnist" --datadir "data/mnist/" --net_config "784, 100, 10" --n_nets 10 --partition "homo" --experiment "u-ensemble,pdm,pdm_iterative" --lr 0.01 --epochs 10 --reg 1e-6 --communication_rounds 5 --lr_decay 0.99 --iter_epochs 5 --alpha "1., 1., 1., 1., 1., 1., 1., 1., 1., 0.01" `
+
+### New Notebook :
+
+The notebook `Plot_graphs.ipynb` was not in the original code. It allows us to read the logs of the different experiment we made, to plot the graphs of the report.
+
+## Original README
+
+--- 
 
 #### Requirements to run the code:
 ---
